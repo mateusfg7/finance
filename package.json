@@ -1,10 +1,16 @@
 {
   "name": "finance",
-  "module": "index.ts",
+  "module": "main.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "lint": "npx ultracite check",
+    "format": "npx ultracite fix"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "2.2.2",
+    "@types/bun": "latest",
+    "ultracite": "5.3.7"
   },
   "peerDependencies": {
     "typescript": "^5"
